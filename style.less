@@ -1,9 +1,80 @@
-/** 
+/**
 * Anax Flat theme.
 */
 @import url(modules.less);
 
 
+body {
+    overflow-y: scroll;
+}
+.rm-max.rm-navbar {
+    display: none;
+}
+@maxButtonFontSize: 3em;
+@navbarItemBgColor: lightgray;
+
+
+@media screen and (max-width: 960px) {
+    .site-logo-text {
+        width: 35%;
+    }
+    .navbar2 {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .after-main {
+        width: 100%;
+    }
+    .site-logo-text {
+        width: 80%;
+    }
+    .rm-max.rm-navbar {
+        display: block;
+    }
+    .navbar2 {
+        display: none;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+/*footer
+  margin: 0 auto;
+
+/* Header */
+img {
+    max-width: 100%;
+}
+
+
+.logo-1 {
+    display: none;
+}
+
+.site-header {
+    height: 80px;
+    background-color: #ededed;
+}
+.navbar2{
+    float: right;
+}
+
+.site-logo-text {
+    float: left;
+    font-size: 2em;
+    a {
+        text-decoration: none;
+        color: green;
+    }
+}
 
 /** --------------------------------------------------------------
  *  Logo images
